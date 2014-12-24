@@ -1,36 +1,42 @@
-# Chapters and Subchapters
+# 章節設定
 
-GitBook uses a `SUMMARY.md` file to define the structure of chapters and subchapters.
+GitBook 使用一個 `SUMMARY.md` 檔案來定義書籍的目錄架構，也就是多層次章節的設定。
 
-The `SUMMARY.md`'s format is simply a list of links, the name of the link is used as the chapter's name, and the target is a path to that chapter's file.
+`SUMMARY.md` 的格式只是簡單的連結列表，連結的「名稱」就是章節的「標題」，連結的標的則是實際的內容「檔案」。
 
-Subchapters are defined simply by adding a nested list to a parent chapter.
+章節的層級，就根據清單的層級進行定義。
 
-### Simple example
+GitBook 的這個設定方式相當彈性，在目錄中使用的「名稱」即使與實際檔案中的第一級大標題不同也無妨（但應注意不要造成讀者的困惑）；多層級可以將書分成「部」、「章」、「節」或是「小節」皆可，而且不會自動賦予編號或固定名稱，選擇自己想要的組織架構即可。
 
-```
-# Summary
-
-* [Chapter 1](chapter1.md)
-* [Chapter 2](chapter2.md)
-* [Chapter 3](chapter3.md)
-```
-
-### Example with subchapters split into *parts*
+### 間單的範例
 
 ```
 # Summary
 
-* [Part I](part1/README.md)
-    * [Writing is nice](part1/writing.md)
-    * [GitBook is nice](part1/gitbook.md)
-* [Part II](part2/README.md)
-    * [We love feedback](part2/feedback_please.md)
-    * [Better tools for authors](part2/better_tools.md)
+* [第一章](chapter1.md)
+* [第二章](chapter2.md)
+* [第三章](chapter3.md)
 ```
 
-## Adding chapters from the editor
+### 以次章節將書分成 *三大部* 的範例
 
-You can add chapters from the desktop or web editor simply by **right clicking** on a chapter
- and selecting `Add section`. Chapter and subchapters can be reorganized by dragging and dropping.
- 
+```
+# Summary
+
+* [第一部](part1/README.md)
+    * [寫作是美好的](part1/writing.md)
+    * [GitBook 也不錯](part1/gitbook.md)
+* [第二部](part2/README.md)
+    * [我們歡迎讀者回饋](part2/feedback_please.md)
+    * [對作者更好的工具](part2/better_tools.md)
+* [第三部]
+		* [工具改造世界](part3/tools_for_change.md)
+		* [電子書的未來](part3/ebook_future.md)
+```
+
+ps. 你可以看到「第一部」與「第二部」是有實際連結到檔案的，這就可以擺放一個簡單的「分部頁」（或俗稱的「章前頁」，你可以擺放特殊的標題、簡單的抽言或引言，甚至連結呈現一張圖片都行。而「第三部」實際上沒有對應檔案，它在目錄上就只是一個「區隔」的用途。
+
+## 從編輯器新增章節
+
+在 GitBook 的編輯器中（原有的桌面編輯器已經廢棄，目前只提供線上、瀏覽器的編輯器），你可以在現有章名上按下**滑鼠右鍵**，再從選單中點選 `Add section` 的項目，藉此新增章節。各種層級的章節都可以使用**拖放**的模式改變順序。
+
