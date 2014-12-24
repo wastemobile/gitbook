@@ -7,6 +7,8 @@ GitBook 是一個使用 Git 分散式版本管理與 Markdown 輕量級標記語
 
 GitBook 的工具是開源且完全免費的，完整的原始碼可以在 [GitHub](https://github.com/GitbookIO/gitbook) 上找到。
 
+你可以在這裡找到[中文內容](https://github.com/wastemobile/gitbook)的 GitHub 倉儲。
+
 ### 需要進一步的協助？
 
 對 GitBook 有任何疑問或需要尋求協助，可以在下面兩個 GitHub 專案上提交問題與建議，或直接以電子郵件聯繫： [contact@gitbook.com](mailto:contact@gitbook.com)。
