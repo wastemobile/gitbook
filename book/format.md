@@ -62,22 +62,22 @@ GitBook 原本就支援以各種語言的內容出版書籍，而這裡指的是
 
 #### Glossary
 
-GitBook 提供了一種簡單的「詞彙表」、「名詞解釋」製作方法。
+GitBook 提供了一種簡單的「詞彙表」、「名詞解釋」製作方法，但很可惜目前不支援中文字詞。
 
-Allows you to specify terms and their respective definitions to be displayed in the glossary. Based on those terms, gitbook will automatically build an index and highlight those terms in pages.
+你只需要新增一個 GLOSSARY.md 文件，以下面的格式撰寫一則則的名詞解釋；這個功能其實很接近「**自動化的跨章節註解**」，這些詞彙不管出現在整本書的哪個章節或頁面，都會自動被加入「連結」，點擊後就會跳轉到該名詞解說，甚至還提供出現在哪些頁面的跳轉連結。你可以將滑鼠移到下面的測試文字上試看看，就會知道實際的作用，還有目前不支援中文的殘酷事實。（或許 GitBook 可以考慮提供一種簡便的特殊語法，讓編輯手動加入，也是不錯的選擇，畢竟有時書籍編輯會習慣在特殊名詞出現第一次時提供註解，並不需要在所有地方增加閱讀時的干擾。）
 
-測試文字：Meteor，精益出版。
+測試文字：Meteor，[精益出版][]。
 
-The GLOSSARY.md format is very simple :
+GLOSSARY.md 的編寫格式非常簡單：
 
 ````
 # term
-Definition for this term
+定義可以使用中文撰寫，但名詞本身不行（不支援自動偵測）。
 
 # Another term
-With it's definition, this can contain bold text and all other kinds of inline markup ...
+在名詞解釋的部分，可以使用各種行內的格式設定語法，例如**粗體**，或是連結也沒問題。
 ```
 
-#### Ignoring files & folders
+#### 忽略檔案與目錄
 
-GitBook will read the `.gitignore`, `.bookignore` and `.ignore` files to get a list of files and folders to skip. (The format inside those files, follows the same convention as `.gitignore`)
+GitBook 會讀取 `.gitignore`, `.bookignore` 以及 `.ignore` 這三個檔案，根據裡面的指示，忽略掉特定的檔案或是整個次目錄。（在文件中以一行一個檔案或目錄的方式撰寫即可。）
