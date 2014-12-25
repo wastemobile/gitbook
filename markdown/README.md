@@ -2,10 +2,10 @@
 
 GitBook 預設使用了 Markdown 的標記語法。
 
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
+本章內容僅快速呈現 Markdown 的基本語法與呈現，若需要更詳細的解說，英文資源可以看看發明人的說明： [John Gruber's original spec](http://daringfireball.net/projects/markdown/) 以及 GitHub 的擴充版 [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/)。[Markdown.tw](http://markdown.tw) 有不錯的中文詳解；想看看俗稱 GFM - GitHub 風格的 Markdown 語法，也找得到[中文翻譯](https://github.com/cssmagic/blog/issues/13)。
 
 
-## Headers
+## 標題
 
 ```no-highlight
 # H1
@@ -15,7 +15,7 @@ This is intended as a quick reference and showcase. For more complete info, see 
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+最常使用的 H1 與 H2 標題，還有更鮮明的另一種寫法：
 
 Alt-H1
 ======
@@ -31,7 +31,7 @@ Alt-H2
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+最常使用的 H1 與 H2 標題，還有更鮮明的另一種寫法：
 
 Alt-H1
 ======
@@ -40,147 +40,147 @@ Alt-H2
 ------
 
 
-## Emphasis
+## 強調語法
 
 ```no-highlight
-Emphasis, aka italics, with *asterisks* or _underscores_.
+強調，例如義大利斜體，可以使用 *asterisks* 或 _underscores_。
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+加重語氣的強調，例如粗體，可以用 **asterisks** 或 __underscores__。
 
-Combined emphasis with **asterisks and _underscores_**.
+你還可以混用這兩種 **asterisks and _underscores_**。
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+替文字加上刪除線，像這樣 ~~Scratch this.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+強調，例如義大利斜體，可以使用 *asterisks* 或 _underscores_。
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+加重語氣的強調，例如粗體，可以用 **asterisks** 或 __underscores__。
 
-Combined emphasis with **asterisks and _underscores_**.
+你還可以混用這兩種 **asterisks and _underscores_**。
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+替文字加上刪除線，像這樣 ~~Scratch this.~~
 
 
-## Lists
+## 清單
 
-(In this example, leading and trailing spaces are shown with with dots: ⋅)
+（下面的範例為了清楚展示縮排時需要的空格，使用了點號，實際撰寫時只需要相同數量的空格。）
 
 ```no-highlight
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
+1. 第一則列表項目
+2. 另一個項目
+⋅⋅* 無序的次清單。
+1. 數字本身是否排序並不重要，通通使用相同的數字也可以。
+⋅⋅1. 排序的次清單。
+4. 另一個項目
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+⋅⋅⋅你可以在一則項目中使用縮進的段落格式。注意上面的**空行**，還有本段前的**空格**（至少一個，我們使用了三個，讓呈現更清楚）。
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+⋅⋅⋅在一個段落中**強制換行**，在語句後方加入兩個**空格**。⋅⋅
+⋅⋅⋅這個被強制設定的獨立行，依舊在同一個段落中。⋅⋅
+⋅⋅⋅（有些人覺得使用空格強制換行太麻煩，例如 GFM 就根本不需要）。
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* 可以使用星號建立無序清單
+- 或是短橫線（負號）
++ 使用半形加號也可以
 ```
 
-1. First ordered list item
-2. Another item
-  * Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1. 第一則列表項目
+2. 另一個項目
+⋅⋅* 無序的次清單。
+1. 數字本身是否排序並不重要，通通使用相同的數字也可以。
+⋅⋅1. 排序的次清單。
+4. 另一個項目
 
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+   你可以在一則項目中使用縮進的段落格式。注意上面的**空行**，還有本段前的**空格**（至少一個，我們使用了三個，讓呈現更清楚）。
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.
-   Note that this line is separate, but within the same paragraph.
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+   在一個段落中**強制換行**，在語句後方加入兩個**空格**。
+   這個被強制設定的獨立行，依舊在同一個段落中。
+   （有些人覺得使用空格強制換行太麻煩，例如 GFM 就根本不需要）。
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* 可以使用星號建立無序清單
+- 或是短橫線（負號）
++ 使用半形加號也可以
 
 
-## Links
+## 連結設定
 
-There are two ways to create links.
+有兩種方式可以建立文中的連結。
 
 ```no-highlight
-[I'm an inline-style link](https://www.google.com)
+[這是一個行內連結](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[這是一個帶有標題的行內連結](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[這是一個參考連結][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[這是一個對應到 Git 倉儲檔案的相對參考連結](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[參考標的物也可以使用數字][1]
 
-Or leave it empty and use the [link text itself]
+直接使用文字對應也可以 [這段文字連到參考項目]
 
-Some text to show that the reference links can follow later.
+參考項目可以寫在文檔的最後，有點像書內的註解（註腳）。
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[這段文字連到參考項目]: http://www.reddit.com
 ```
 
-[I'm an inline-style link](https://www.google.com)
+[這是一個行內連結](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[這是一個帶有標題的行內連結](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[這是一個參考連結][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[這是一個對應到 Git 倉儲檔案的相對參考連結](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[參考標的物也可以使用數字][1]
 
-Or leave it empty and use the [link text itself]
+直接使用文字對應也可以 [這段文字連到參考項目]
 
-Some text to show that the reference links can follow later.
+參考項目可以寫在文檔的最後，有點像書內的註解（註腳）。
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[這段文字連到參考項目]: http://www.reddit.com
 
 
-## Images
-
-```no-highlight
-Here's our logo (hover to see the title text):
-
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-```
-
-Here's our logo (hover to see the title text):
-
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-
-
-## Code and Syntax Highlighting
-
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+## 圖片
 
 ```no-highlight
-Inline `code` has `back-ticks around` it.
+這是我們的 logo （將滑鼠移到圖片上會顯示圖片標題）：
+
+行內格式：
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例一")
+
+參考連結格式：
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例二"
 ```
 
-Inline `code` has `back-ticks around` it.
+這是我們的 logo （將滑鼠移到圖片上會顯示圖片標題）：
 
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+行內格式：
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例一")
+
+參考連結格式：
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例二"
+
+
+## 程式代碼與語法顯著標示
+
+程式代碼的呈現是 Markdown 規格的一部分，但語法顯著標示不是。但已經有許多新的組版與轉換引擎支援了這個顯示慣例，例如 Github 與 *Markdown Here*，當然這項功能的實作還有很多歧異。*Markdown Here* 支援了非常多不同語言的特殊呈現（甚至包含了 diffs 與 HTTP headers）。想一覽完整的支援清單，以及如何正確標示語言名稱，可以參考 [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html)。
+
+```no-highlight
+行內 `code` 必須使用 `back-ticks` 將文字包起來（一般鍵盤左上方的第一個鍵）。
+```
+
+行內 `code` 必須使用 `back-ticks` 將文字包起來（一般鍵盤左上方的第一個鍵）。
+
+整段獨立呈現的代碼必須使用成對的三個 back-ticks <code>```</code> 包裹起來，或是使用四個空格縮排。我建議使用第一種方法，因為那能讓代碼顯著標示。
 
 <pre lang="no-highlight"><code>```javascript
 var s = "JavaScript syntax highlighting";
@@ -216,12 +216,12 @@ But let's throw in a <b>tag</b>.
 ```
 
 
-## Tables
+## 表格
 
-Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+最初的 Markdown 規格並沒有包含表格，但 GFM 與 *Markdown Here* 都有支援。這個撰寫語法也常出現在電子郵件中。
 
 ```no-highlight
-Colons can be used to align columns.
+冒號（Colons）是用來對齊的（擺左齊左、擺右齊右，都擺就置中）。
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -229,7 +229,7 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+最外圍的豎線（|）不是絕對需要，在原始文檔中你可以不要太在意美觀，實際轉成網頁或電子書時會呈現得很好。你也可以在表格內使用行內格式。
 
 Markdown | Less | Pretty
 --- | --- | ---
@@ -237,15 +237,15 @@ Markdown | Less | Pretty
 1 | 2 | 3
 ```
 
-Colons can be used to align columns.
+冒號（Colons）是用來對齊的（擺左齊左、擺右齊右，都擺就置中）。
 
-| Tables        | Are           | Cool |
+| Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+最外圍的豎線（|）不是絕對需要，在原始文檔中你可以不要太在意美觀，實際轉成網頁或電子書時會呈現得很好。你也可以在表格內使用行內格式。
 
 Markdown | Less | Pretty
 --- | --- | ---
@@ -253,28 +253,28 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 
-## Blockquotes
+## 引言
 
 ```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+> 引言（Blockquotes）常常出現在電子郵件中，表示摘錄來信原句並回覆。
+> 這一行是引言的一部分。
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> 這是一段非常長的引言區塊，只要在句首使用了正確的符號與空格，你可以持續不間斷的撰寫，整段文字都還是會被包含在引言區塊中。當然你依舊可以在引言區塊中 *使用* **Markdown** 的行內格式標記語法。
 ```
 
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+> 引言（Blockquotes）常常出現在電子郵件中，表示摘錄來信原句並回覆。
+> 這一行是引言的一部分。
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> 這是一段非常長的引言區塊，只要在句首使用了正確的符號與空格，你可以持續不間斷的撰寫，整段文字都還是會被包含在引言區塊中。當然你依舊可以在引言區塊中 *使用* **Markdown** 的行內格式標記語法。
 
 
-## Inline HTML
+## 行內 HTML
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+因為 Markdown 本來就預設要轉換成 HTML 網頁格式，所以你當然可以直接寫入正確的 HTML 代碼，看起來都蠻正常的。（是的，電子書就是一種經過打包的 HTML 網頁組合，很像一個獨立的微型網站。）
 
 ```no-highlight
 <dl>
@@ -295,44 +295,47 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 </dl>
 
 
-## Horizontal Rule
+## 水平分隔線
 
 ```
-Three or more...
+三個或三個以上的符號，必須在獨立的一行，前後不能有其他文字。
 
 ---
 
-Hyphens
+短橫線（Hyphens）
 
 ***
 
-Asterisks
+半形星號（Asterisks）
 
 ___
 
-Underscores
+下底線（Underscores）
 ```
 
-Three or more...
+三個或三個以上的符號，必須在獨立的一行，前後不能有其他文字。
 
 ---
 
-Hyphens
+短橫線（Hyphens）
 
 ***
 
-Asterisks
+半形星號（Asterisks）
 
 ___
 
-Underscores
+下底線（Underscores）
 
 
-## Line Breaks
+## 空行分隔段落
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
+習慣或熟悉 Markdown 如何進行分段是很重要的，基本上**空行**代表前後的文字都會是段落（在 HTML 中以 `<p>` 與 `</p>` 包裹起來）。如果你使用新一代的桌面編輯軟體，有些讓你可以微調空行的呈現，讓編輯區看起來不那麼鬆散；甚至還有軟體直接取消分行的設定，按下 **return** 就代表分段了，例如 [Ulysses]
+(http://www.ulyssesapp.com)。
 
-Here are some things to try out:
+總之最好的方法是啟動一點實驗精神，打開你的編輯環境（不管是桌面軟體或 GitBook Web Editor），啟用即時檢視（預覽結果），試著輸入幾次、看看有什麼結果，很快就熟悉了。
+
+試著嘗試看看下面的輸入與結果：
 
 ```
 Here's a line for us to start with.
@@ -350,12 +353,12 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+（注意： *Markdown Here* 套用了 GFM 的分行模式，因此強制斷行並不需要在字句後方加入兩個空格。）
 
 
-## Youtube videos
+## Youtube 影片
 
-They can't be added directly but you can add an image with a link to the video like this:
+雖然你無法直接置入 Youtube 影片，但可以採用圖片連結的模式：
 
 ```no-highlight
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
@@ -363,7 +366,7 @@ They can't be added directly but you can add an image with a link to the video l
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ```
 
-Or, in pure Markdown, but losing the image sizing and border:
+你也可以直接在 Markdown 這樣寫，但會失去尺寸與邊線的設定：
 
 ```no-highlight
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
