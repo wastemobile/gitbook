@@ -1,10 +1,10 @@
-# Cover
+# 封面
 
-To make your book more elegant on GitBook, you can specify a cover.
+無需廢言，一個清晰漂亮的書籍封面是必要的。
 
-A cover is specified by a **cover.jpg** file, a **cover_small.jpg** can also exist as a smaller version of the cover. The cover should be a **JPEG** file.
+在 GitBook 書籍專案根目錄下擺一個 **cover.jpg** （大書封）以及一個 **cover_small.jpg** （小書封），只接受 **JPEG** 圖片格式。
 
-### Best Sizes
+### 最佳尺寸
 
 |  | Big | Small |
 | -- | -- | -- |
@@ -14,14 +14,14 @@ A cover is specified by a **cover.jpg** file, a **cover_small.jpg** can also exi
 
 ### Autocover
 
-A GitBook plugin (`autocover`) can also be used to generate a cover file for you, or just generate the `cover_small.jpg` from your big cover. This plugin is added by default on hosted books.
+GitBook 有一個外掛（`autocover`）可以用來製作封面圖檔，或替你從大書封自動製作小書封，預設是有啟動的，因此你可以只上傳大書封就好。
 
-[Read more about autocover](https://github.com/GitbookIO/plugin-autocover).
+[autocover 的詳細說明](https://github.com/GitbookIO/plugin-autocover).
 
-### Guidelines
+### 封面設計指引
 
-A good cover respects the following guidelines:
+一個在 GitBook 看起來很棒的書封通常遵循著下面的指引：
 
-* No border
-* Clearly visible book title
-* Any important text should be visible in the small version
+* 沒有設定圖片的邊線（no border）
+* 書名清晰可辨（書名小到看不見，是差勁的設計）
+* 任何你覺得重要的文字，都應該在小尺寸時依舊能看得清楚

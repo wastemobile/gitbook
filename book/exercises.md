@@ -1,6 +1,8 @@
-# Exercises and Quizzes
+# 實際演練與習題
 
-Exercises and quizzes can be activated using the **plugins** configuration in your `book.json`. Example of book.json:
+（由於 GitBook 很適合學習程式設計類的書籍，因此開發了獨特的外掛，當然任何類型的書籍也都可以使用，增加一點互動或許能讓你的書籍更吸引人、更有用。）
+
+實際演練（Exercises）與習題（Quizzes）可以使用特殊的 `book.json` 檔案來啟用，參考下面的範例：
 
 ```js
 {
@@ -8,18 +10,18 @@ Exercises and quizzes can be activated using the **plugins** configuration in yo
 }
 ```
 
-#### Exercises
+#### 實地演練（Exercises）
 
-A book can contain interactive exercises (currently only in Javascript). An exercise is a code challenge provided to the reader, which is given a code editor to write a solution which is checked against the book author's validation code.
+一本書可以包含互動的實地演練，目前只支援 JavaScript。一個演練像是讓讀者能實際挑戰一段代碼的寫作，外掛提供了代碼編輯區塊，能夠設計問題與解答的檢查。
 
-An exercise is defined by 4 simple parts:
+一個實地演練由四個簡單步驟組合而成：
 
-* Exercise **Message**/Goals (in markdown/text)
-* **Initial** code to show to the user, providing a starting point
-* **Solution** code, being a correct solution to the exercise
-* **Validation** code that tests the correctness of the user's input
+* 演練 **訊息**/目標（使用 markdown 或純文字）
+* **Initial** 展示給讀者的初始代碼，提供一個起點
+* **Solution** 結果代碼，演練的正確解答
+* **Validation** 驗證程式：用來檢查讀者輸入代碼是否正確
 
-Exercises needs to start and finish with a separation bar (```---``` or ```***```). It should contain 3 code elements (**base**, **solution** and **validation**). It can contain a 4th element that provides **context** code (functions, imports of libraries etc ... that shouldn't be displayed to the user).
+演練區塊需要以獨立的符號區隔（```---``` 或是 ```***```），應該要包含三段代碼元素（**base**, **solution** 與 **validation**）。特殊的第四種元素是 **context** 代碼（函數、函式庫的引入等等，這些都是提供讓程式能正確運作的情境要素，讀者看不到這些代碼）。
 
     ---
 
@@ -48,17 +50,17 @@ Exercises needs to start and finish with a separation bar (```---``` or ```***``
     ---
 
 
-#### Quizzes
+#### 習題
 
-A book can also contain interactive quizzes.
+一本書也能包含互動的習題（問題與解答）。
 
-A Quiz is defined in the same way as an exercise.
+其實習題與實地演練的設定與概念都差不多，只不過習題演練多了輸入與驗證程式碼的功能，比較像是「申論題」；習題則像是簡單的「單選題」或「複選題」，有時猜一下也行。
 
     ---
 
-    Here is the introduction for the quiz
+    這裏寫一整組習題的描述文字。
 
-    This is Question 1:
+    這是第一道習題：
     - [x] This is the proposition 1 (the correct one)
     - [ ] This is the proposition 2
 
