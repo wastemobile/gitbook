@@ -1,6 +1,7 @@
 # SUMMARY
 
 * [簡介](README.md)
+   * [補充說明](book/addendum.md)
 * [書籍格式](book/format.md)
    * [章節](book/chapters.md)
    * [Markdown](markdown/README.md)
