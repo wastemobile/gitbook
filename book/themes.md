@@ -1,14 +1,14 @@
-# Themes
+# 佈景主題
 
-Themes can be used to customize your book's homepage using predefined or custom HTML template.
+佈景主題（Themes）是指你在 GitBook 上的書籍單頁，並不是指書籍內文的排版樣式。你可以調整書籍單頁的呈現樣貌。
 
-### Predefined themes
+### 預設主題
 
-GitBook predefined themes are open source and available on [GitHub](https://github.com/GitbookIO/themes).
+GitBook 的預設主題以開源方式提供，你可以從 [GitHub](https://github.com/GitbookIO/themes) 取得檔案。
 
-### Format
+### 格式
 
-Themes on GitBook use the [SWIG](http://paularmstrong.github.io/swig/docs/) syntax.
+GitBook 佈景主題使用的是 [SWIG](http://paularmstrong.github.io/swig/docs/) 語法，總之又是一套設計模板用的語法（這是個巴別塔的世界啊！）。
 
 #### Variables for book homepage
 

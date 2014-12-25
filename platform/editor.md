@@ -1,28 +1,30 @@
-# Editor
+# 書籍編輯器
 
-An  [editor is available online](https://www.gitbook.com) to edit your books. A new build will be started each time you save a file. Refer to the section "Draft Workflow" if you want to write a draft of the book without build it.
+GitBook 提供了打開瀏覽器就能用的 [線上編輯器](https://www.gitbook.com)，每一次你做完內容修改、儲存之後，系統就會自動進行製書程序。若是你不想要這麼頻繁的產生書籍版本，請參考後面關於「草稿編輯流程」的說明。
 
 ![Preview of the editor](https://www.gitbook.com/assets/images/backgrounds/preview_editor.png)
 
-### How to access the editor?
+### 如何開啟編輯器？
 
-The editor is accessible on each of your books. From the book's dashboard, click on the "edit" icon, it will open a new tab with the editor.
+從每一本書的管理頁進入，點擊「edit」按鍵就會自動開啟編輯器。
 
-The editor is compatible with all modern web browsers: Google Chrome, Safari, Firefox and Internet Explore; check that you're using the latest version of your web browser.
+編輯器可以使用大多數現代化的網頁瀏覽器開啟： Google Chrome, Safari, Firefox 以及 Internet Explore（？），最好時時檢查你是否已經升級到最新版的瀏覽器。
 
-### Draft Workflow
+### 草稿編輯流程（Draft Workflow）
 
-The GitBook Editor will trigger a new build each time you save a file (or when you edit the glossary or the summary).
+儲存檔案，修改目錄指引或是名詞、索引檔案，都會驅動後台自動進行製書程序。
 
-But using the correct workflow, it's possible to work on a draft of your book then build it once it's finished.
+但有時你還在進行編輯與校對，每次修改都立即製作書籍不符合你的需求，這時就可以啟用「草稿編輯模式」（事實上，這是 Git 開分支的功能），可以讓你完成所有編輯、校對、審閱流程之後，才進行一次製書程序，產生一個新的書籍版本。
 
-1. Create a new branch from the branches menu
-    1. Enter a name that describe your modification, for example: "firstdraft"
-    2. Select "master" as the origin branch
-2. Your active branch should now be the branch that you just created
-3. Edit your book like usual
-4. When your draft is finish, open the branches menu and click on "Merge Branches"
-5. Merge your draft branch into the master branch
-6. Delete your old draft branch
-7. Done!
+
+1. 從編輯器右上方的「分支選單」，建立一個新分支（branch）
+    1. 替分支取個名稱，例如： "firstdraft"
+    2. 選擇 "master" 為參考基準（origin branch）
+2. 剛剛新建的分支，現在應該會是你工作區內的啟用分支
+3. 編輯與修改內容（這時的任何儲存都不會再驅動製書程序了）
+4. 當你完成編輯之後，打開分支選單，點選「合併（Merge Branches）」
+5. 把在草稿中的所有修改都合併回原來的主分支（master branch）
+6. 合併成功之後，你就可以刪除掉草稿分支了
+7. 完成！
+
 

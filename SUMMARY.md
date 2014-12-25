@@ -10,7 +10,7 @@
    * [使用 GIT 更新](book/push.md)
    * [製書](book/build.md)
    * [常見錯誤](book/errors.md)
-   * [排版樣式](book/themes.md)
+   * [佈景主題](book/themes.md)
    * [書籍權限](book/visibility.md)
    * [自訂網域名稱](book/domains.md)
 * 平台服務

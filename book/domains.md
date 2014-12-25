@@ -1,20 +1,20 @@
-# Custom Domains
+# 自定網域名稱
 
-All books on **Gitbook.io** are accessible via the url **http://{{author}}.gitbooks.io/{book}/**, and content is accessible at **http://{{author}}.gitbooks.io/{book}/content/**.
+所有 **Gitbook.io** 的書籍，都可以透過這樣的網址 **http://{{author}}.gitbooks.io/{book}/** 連結到書籍介紹頁，書籍內文則在 **http://{{author}}.gitbooks.io/{book}/content/** 這個網址。
 
-But you can configure your book to use a custom domain name (a free feature on GitBook). Domain name can be use for the homepage and the content (or both).
+但你可以替自己的書設置**自訂網域名稱**（GitBook 提供的免費功能，當然你必須先在外部付費註冊到自己的網域名稱才行）。網域名稱可以套用到書籍單頁（介紹頁）以及內容頁。
 
-The process to add a custom domain to your book is easy.
+設定網域的程序很簡單。
 
-1. Add your domain name in your book settings.
+1. 在書籍管理頁輸入自定網域名稱
 
-In order to use your own domain, you will need to make a few changes with your domain registrar:
+你必須先到你的網域購買商、DNS服務商的管理功能中進行設置：
 
-1. Log in to your domain registrar and find the section that allows you to add/edit host records, often found in a settings menu called 'Edit DNS', 'Host Records' or 'Zone File Control'.
+1. 登入網域註冊商頁面後，找到 DNS 管理功能，可能會叫做  'Edit DNS', 'Host Records' 或 'Zone File Control'。
 
-2. Set the www record to a CNAME and set the URL field to: ```www.gitbook.com```.
+2. 增加一個 CNAME，對應到 ```www.gitbook.com```。
 
-3. To redirect the naked domain (`yourdomain.com`) to `www.yourdomain.com`, find the option to forward your domain. This can usually be found under 'Forwarding', 'URL Forwarding' or 'URL Redirect'.
+3. 想設置轉址 (`yourdomain.com`) 到 `www.yourdomain.com`，你必須在 DNS 管理功能中找到 'Forwarding', 'URL Forwarding' 或 'URL Redirect' 的設置選項。
 
 
-It may take a few hours for domain changes to propagate.
+網址的轉換有時需要幾個小時的時間，請耐心等候。

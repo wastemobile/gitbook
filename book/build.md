@@ -1,22 +1,22 @@
-# Build
+# 製書
 
-After you pushed content using **git** or the **editor**, GitBook will start different builds:
+當你使用 **git** 或 **gitbook editor** 更新內容之後，GitBook 就會自動進行下面的程序：
 
-- **website**: it will generate the website
-- **json**: il will extract metadata about the book (summary, introduction, etc)
-- **epub**: it will generate the epub download
-- **pdf**: it will generate the pdf download
+- **website**: 製作一個可以線上閱讀的書籍網站
+- **json**: 產生一個包含書籍詮釋資料的檔案（供機器閱讀）
+- **epub**: 製作 epub 提供下載
+- **pdf**: 製作 pdf 提供下載
 
-### List builds
+### 製書的歷史紀錄
 
-The **History** tab on your book let you follow the evolution of your builds.
+書籍管理頁的 **History** 頁籤，可以看到製書程序的歷史運行紀錄，成功或失敗紀錄都有。
 
-### Details for a build
+### 觀看詳細紀錄
 
-When clicking the button associated with a build, you can access a detailed page for it. This page will let you see the output of the build process.
+點擊製書紀錄可以進入觀看詳細資訊。
 
-### Fixing errors
+### 錯誤修正
 
-If your build failed, you can use the logs to debug the issue and publish a fixed content.
+有時遇到轉製失敗的狀況，你就會需要檢查一下錯誤訊息，看看什麼地方需要修改，並再次提交。
 
-[Read more about common build errors](./errors.md)
+[常見的製書錯誤訊息](./errors.md)

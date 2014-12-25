@@ -1,27 +1,26 @@
-# Searching GitBook
+# 搜尋 GitBook
 
-You can use [our powerful search tools](https://www.gitbook.com/search) to find what you're looking for among thousands of books on GitBook.
+使用 GitBook 的 [搜尋工具](https://www.gitbook.com/search) 找到你想閱讀的書籍，實際上這頁已經自動轉換到新版的 [Explore GitBook](https://www.gitbook.com/search)，側邊欄可以讓你挑選付費書籍、熱門書籍，或是只瀏覽以某一種語言撰寫的書目。
 
-When searching GitBook, you can construct queries that match specific numbers and words.
+搜尋框內可以使用一些簡單的進階搜尋語法。
 
+### 基本的全文搜尋
 
-### Search by text
+預設搜尋與一般關鍵字搜尋相同，例如當你輸入 `javascript angular` ，會找到所有包含 "javascript" 與 "angular" 關鍵字的書。
 
-By default, GitBook search books associated with the keywords from the query. For example `javascript angular` will return all the books that contain the word "javascript" and "angular"
+### 排除某些特定字詞
 
-### Exclude results containing a certain word
+你可以使用 `NOT` 語法排除掉某些關鍵字，例如輸入 `hello NOT world` 就不會找出一海票的 "Hello World" 內容，可以有效篩選掉不需要的結果。
 
-You can also narrow your search results by excluding words with the `NOT` syntax. Searching for `Hello` returns a massive number of "Hello World" projects, but changing your search to include `hello NOT world` returns fewer results.
+### 搜尋特定欄位的值
 
-### Query for specific field values
+舉例來說，輸入 [license:apache-2](https://www.gitbook.com/search?q=license%3A%22apache-2%22) 會找到 GitBook 書籍的版權欄位（license）設定為 `apache-2` 授權模式的書籍。
 
-You can filter books by including only books with a specific field value. For example: [license:apache-2](https://www.gitbook.com/search?q=license%3A%22apache-2%22) returns the list of books with the Apache 2 license.
+### 使用比較級語法篩選結果
 
-### Query for values less/greater than another value
+你可以使用 `>` 或 `>=` 進行「大於」或「大於或等於」的搜尋，例如 `cats stars:">10"` 與 `cats stars:">= 11"`。
 
-You can use `>` or `>=` to indicate "greater than" and "greater than or equal to," respectively. For example, the following search queries are equivalent: `cats stars:">10"` and `cats stars:">= 11"`
-
-You can use `<` and `<=` to indicate "less than" and "less than or equal to," respectively.
+以此類推，`<` 與 `<=` 分別表示「小於」和「小於或等於」。
 
 
 

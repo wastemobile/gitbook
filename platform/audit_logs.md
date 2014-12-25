@@ -1,10 +1,10 @@
-# Audit Logs
+# 編輯歷史紀錄
 
-GitBook keeps logs of audited user, book, and system events. You can use these logs to check your account security as well as to comply with internal security mandates and external regulations.
+GitBook 紀錄了各種系統存取、閱讀與編輯的紀錄，可以讓你檢查內部編輯協作時的安全性，或是處理其他的安全性議題。
 
-### Audited actions
+### 被記錄的行為
 
-You can search the audit log for a wide variety of actions.
+你可以搜尋下面各種操作行為的紀錄：
 
 | Name | Description |
 | ---- | ----------- |

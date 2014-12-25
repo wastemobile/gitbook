@@ -1,24 +1,24 @@
-# Update your book using GIT
+# 使用 GIT 更新書籍
 
-When your book is created on **gitbook.com**, you need to push some content to it. To do so, you can use the web editor or the command line.
+在 **gitbook.com** 建立一個書籍專案之後，最重要的就是持續更新內容了，使用網頁版的編輯器，或是使用終端機指令更新皆可。
 
-If you want to update your book from the command line, you can use [GIT](http://git-scm.com) to push your content:
+第二種方法其實就是使用 [GIT](http://git-scm.com) 提交你的內容異動：
 
 ### GIT Url
 
-Each book is associated with a Git HTTPS url. The ssh protocol is not yet supported on the GitBook's git server.
+每一本書都對應著一個 Git HTTPS 網址，GitBook 的 git 主機還不接受 ssh 傳輸協定。
 
-The format for the git url is:
+網址看起來像這樣：
 
 ```
 https://git.gitbook.com/{{UserName}}/{{Book}}.git
 ```
 
-### Authentication
+### 授權驗證
 
-The git server is using your basic GitBook login to authenticate you. When prompted enter your GitBook username and your password (you can also use your API token).
+主機需要驗證你的 GitBook 帳號，跳出提示時輸入你的 GitBook 帳戶名稱與密碼即可（你也可以使用專屬的 API token）。
 
-### Create a new repository on the command line
+### 使用終端機指令建立新的書籍專案
 
 ```
 touch README.md SUMMARY.md
@@ -29,11 +29,15 @@ git remote add gitbook https://git.gitbook.com/{{UserName}}/{{Book}}.git
 git push -u gitbook master
 ```
 
-### Push an existing repository
+### 推送到現有的書籍專案
 
 ```
 git remote add gitbook https://git.gitbook.com/{{UserName}}/{{Book}}.git
 git push -u gitbook master
 ```
+## 使用 GitHub
 
+GitBook 已經支援你將書籍專案（Git 倉儲）擺在 GitHub 服務，對已經很熟悉 GitHub 的程式設計師來說可能更加方便。
+
+請先到自己的設定頁面連接你的 GitHub 帳號，這樣就可以到書籍管理頁去設定對應的倉儲了。
 

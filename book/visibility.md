@@ -1,15 +1,15 @@
-# Visibility
+# 書籍權限
 
-#### Public/Private
+#### 開放或私密
 
-Your book can be **public** or **private**. Public books are visible to everybody but only collaborators can update it. Private books are visible only by the collaborators.
+你的書籍可以是 **開放（public）** 或 **私密（private）** 兩種模式之一。開放書籍可以被所有人看到，但只有受邀、有權限的協作者才能編輯。私密書籍就只有攜佐者才能看到了。
 
-You can switch your book from public to private and the inverse.
+兩種模式可以隨時切換變更。
 
-#### Paid books
+#### 付費書籍
 
-Paid books can only be **public**.
+提供讀者付費購買的書籍，一定要是 **開放（public）** 模式。
 
-#### Home/Explore pages
+#### 首頁與瀏覽頁面
 
-Home and Explore pages only list books that are already successfully built. It is advised to set a cover picture.
+首頁與瀏覽頁面只會列出已經成功轉製的書籍，建議給你的書設定好漂亮的封面。
