@@ -1,5 +1,5 @@
 {
-    "plugins": [],
+    "plugins": ["autocover"],
     "links": {
         "sidebar": {
             "Contact us": "mailto:contact@gitbook.com"
