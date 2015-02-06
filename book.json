@@ -1,5 +1,4 @@
 {
-    "gitbook": "2.x.x",
     "plugins": ["autocover"],
     "links": {
         "sidebar": {
