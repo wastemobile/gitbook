@@ -1,4 +1,3 @@
-{% raw %}
 # 擴延內容區塊 Extend blocks
 
 擴延模板的內容區塊，是向作者提供額外功能的最佳方式。
@@ -65,6 +64,3 @@ module.exports = {
     Body of sub-block 1
 {% endmyTag %}
 ```
-
-
-{% endraw %}
