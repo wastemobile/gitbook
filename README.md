@@ -32,7 +32,10 @@ GitBook 外掛就是百分百的 Node 套件，熟悉 JavaScript 與 Node 的程
 
 原先 [MathJax 外掛](https://github.com/GitbookIO/plugin-mathjax) 只對線上瀏覽的書籍有效，現在也被提升到打包電子書之中了。
 
-> 部分 GitBook 2.x 的功能與說明還不太完整，持續會有更新。
+```
+1. 部分 GitBook 2.x 的功能與說明還不太完整，持續會有更新。
+2. 最近 Git 推上去之後的製書常常出現不明錯誤，有些不穩定。
+```
 
 ## 內容概要
 
