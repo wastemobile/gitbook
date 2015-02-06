@@ -9,7 +9,6 @@
    * [封面](format/cover.md)
    * [模板（new）](format/templating.md)
    * [內容參照（new）](format/conrefs.md)
-   * [實際演練與習題（特殊外掛）](book/exercises.md)
 * [製書流程](build/README.md)
    * [使用 GIT 更新](build/push.md)
    * [常見錯誤](build/errors.md)
@@ -29,5 +28,6 @@
 * [外掛](plugins/README.md)
   * [建立外掛](plugins/create.md)
   * [擴充內容區塊](plugins/blocks.md)
+  * [實際演練與習題（特殊外掛）](book/exercises.md)
   * Extend filters
   * Extend Assets
