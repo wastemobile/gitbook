@@ -1,7 +1,5 @@
 ## GitBook 2.0！
 
-（製書流程始終出現 `ENOSPC, no space left on device` 的怪異錯誤，除蟲中...）
-
 剛剛進入 `2.0.0-alpha` 階段的 GitBook，帶來了讓人興奮的新功能！
 
 #### 模板引擎！
