@@ -97,4 +97,4 @@
 
 ### 嵌入（include）
 
-嵌入功能，會在[內容參照（Content References）](./book/conrefs.html)中詳細解說。
+嵌入功能，會在[內容參照（Content References）](./conrefs.html)中詳細解說。
