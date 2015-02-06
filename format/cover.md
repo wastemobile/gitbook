@@ -12,12 +12,6 @@
 | **Size(in pixels)** | 1800x2360 | 200x262 |
 
 
-### Autocover
-
-GitBook 有一個外掛（`autocover`）可以用來製作封面圖檔，或替你從大書封自動製作小書封，預設是有啟動的，因此你可以只上傳大書封就好。
-
-[autocover 的詳細說明](https://github.com/GitbookIO/plugin-autocover).
-
 ### 封面設計指引
 
 一個在 GitBook 看起來很棒的書封通常遵循著下面的指引：
@@ -25,3 +19,10 @@ GitBook 有一個外掛（`autocover`）可以用來製作封面圖檔，或替�
 * 沒有設定圖片的邊線（no border）
 * 書名清晰可辨（書名小到看不見，是差勁的設計）
 * 任何你覺得重要的文字，都應該在小尺寸時依舊能看得清楚
+
+### Autocover
+
+GitBook 有一個外掛（`autocover`）可以用來製作封面圖檔，或替你從大書封自動製作小書封，預設是有啟動的，因此你可以只上傳大書封就好。
+
+[autocover 的詳細說明](https://github.com/GitbookIO/plugin-autocover).
+
