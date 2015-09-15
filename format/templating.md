@@ -1,6 +1,16 @@
 # 模板
 
-這裏說明了 GitBook 可以使用的模板功能，GitBook 使用的是 Nunjucks 與 Jinga2 的語法（Jinga2 是 Python 程式語言的一種模板引擎，Nunjucks 則是將其功能實現在 JavaScript 語言環境）。
+這裏說明了 GitBook 可以使用的模板功能，GitBook 使用的是 [Nunjucks](https://mozilla.github.io/nunjucks/) 與 [Jinga2](http://jinja.pocoo.org/) 的語法（Jinga2 是 Python 程式語言的一種模板引擎，Nunjucks 則是將其功能實現在 JavaScript 語言環境）。
+
+### 跳脫 Escaping
+
+如果想要呈現模板的標籤，可以使用 **raw** 包裹起來，裡面的內容都會原樣輸出成純文字。
+
+```
+{% raw %}
+  this will {{ not be processed }}
+{% endraw %}
+```
 
 ### 變數 Variables
 

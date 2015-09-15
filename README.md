@@ -1,41 +1,33 @@
-## GitBook 2.0！
+## GitBook 2.4
 
-剛剛進入 `2.0.0-alpha` 階段的 GitBook，帶來了讓人興奮的新功能！
+2015/09/15
 
-#### 模板引擎！
+GitBook 是一個終端機指令工具，也是 Node.js 的代碼庫，使用 GitHub/Git 與 Markdown（或 AsciiDoc）就能製作漂亮的書籍。看看這個例子：[《Learn JavaScript》]。
 
-![Template Engine](https://gitbookio.github.io/blog/assets/2015-02-05-process.png)
+[GitBook](https://www.gitbook.com/) 同時也是一間書籍發佈平台與電子書店。一度停止開發的桌面版編輯器最近也回籠了，同時支援 Mac、Windows 與 Linux 三種平台，[下載試看看吧！](https://www.gitbook.com/editor)
 
-電子書的擴充（不一定是互動，可能只是特殊呈現）能怎麼做？截至目前為止，只有 iBooks Author 有一些小控件（Widgets）可用，而它們其實都是以精美外觀與介面包裝起來的 JavaScript。
+### 開放格式
 
-GitBook 2.0 居然向前跨了一大步，直接把 JavaScript 常見的模板、視圖小幫手還有控制器（JavaScript 函數）通通擺了進來，是有一點小誇張，但很讓人驚艷啊！
+GitBook 的工具能製成多種格式：**PDF, ePub, mobi 與線上閱讀版本（網站）**。
 
-#### 支援更多的標記語法
+它是開源的，你可以在[這裡](https://github.com/GitbookIO/gitbook)看到工具的原始碼，修過進階魔法學的魔法師可以取回自行調配。
 
-增加了 AsciiDoc 和 reStructuredText 解析器。
+你同樣可以在 [GitHub](https://github.com/GitbookIO/gitbook/issues) 上提交你的問題與意見，甚至協助解決問題或改善程序。
 
-#### 內容參照（不管是書籍內部或外部）
+### GitBook.com
 
-增加了直接嵌入內容，甚至是外部 Git 倉儲中的文件。
+GitBook.com 是一個建置與擺放書籍的開放**平台**，當然你得遵循 GitBook 對草稿文件的一些規範。
 
-#### 外掛，以及擴充模板語法
+> 好吧，這網站其實複雜得多。它有電子書店的展示、搜尋與購買機制，也能讓出版者自由上架販售，同時底層還是個兼具 Git 版本管理的中央倉儲，以及將草稿轉換為各種電子書與網站的引擎。
 
-GitBook 外掛就是百分百的 Node 套件，熟悉 JavaScript 與 Node 的程式設計師可以大展身手了。
+### 其他文件
 
-一般的寫作者或是編輯，真正會用的可能是經外掛擴充的**內容區塊**（blocks）。它其實就是一種「視圖小幫手」，作者只需要使用特定語法標籤，送進參數，背後的程序就會做完該做的事，你擺放標籤的位置，會被返回、處理過的 HTML 內容替換掉。
+開發者需要參考的 API 與 Plugins 文件已經獨立出來，英文版本在 [developer.gitbook.com](https://developer.gitbook.com/)。
 
-#### 圖片處理能力大幅提升
+針對企業版本的設定指南與文件則在 [help.enterprise.gitbook.com](http://help.enterprise.gitbook.com/)。
 
-最重要的，就是支援自動取回遠端圖片的打包功能（之前我只知道 Pandoc 可以做到）。SVG 圖片（包含 inline SVGs）都會被自動轉成 PNGs。
+> [GitBook 企業版本](https://enterprise.gitbook.com)是將這整套文件管理與製書機制，提供給企業使用的方案，由於可獨立運作在企業的伺服器中，更能確保安全。20個人以下年費為美金$5,000，21至40人則要$10,000，依次遞增；大學院校、新創公司或非營利事業有特別的優惠。
 
-#### 數學公式呈現
-
-原先 [MathJax 外掛](https://github.com/GitbookIO/plugin-mathjax) 只對線上瀏覽的書籍有效，現在也被提升到打包電子書之中了。
-
-```
-1. 部分 GitBook 2.x 的功能與說明還不太完整，持續會有更新。
-2. 最近 Git 推上去之後的製書常常出現不明錯誤，有些不穩定。
-```
 
 ## 內容概要
 
@@ -58,15 +50,8 @@ GitBook 是一個已經朝正確方向前進了幾步的建構，關心電子書
 
 這本小書包含 **GitBook** 的完整文件，涵蓋其服務平台與工具。原始的英文文件在 [GitHub](https://github.com/GitbookIO/documentation) ，也可以透過 GitBook 的網頁介面閱讀[原書](http://help.gitbook.io)。
 
-GitBook 是一個使用 Git 分散式版本管理與 Markdown 輕量級標記語法製作電子書的服務與工具，你可以一次產生多種不同流通格式，包含了 **PDF**, **ePub**, **mobi**（Amazon 專屬格式）或是一個 **線上閱讀網站**。
-
-GitBook 的工具是開源且完全免費的，完整的原始碼可以在 [GitHub](https://github.com/GitbookIO/gitbook) 上找到。
-
-你可以在這裡找到[中文內容](https://github.com/wastemobile/gitbook)的 GitHub 倉儲。
+> 你可以在這裡找到[中文內容](https://github.com/wastemobile/gitbook)的 GitHub 倉儲。
 
 #### 需要進一步的協助？
 
 對 GitBook 有任何疑問或需要尋求協助，可以在下面兩個 GitHub 專案上提交問題與建議，或直接以電子郵件聯繫： [contact@gitbook.com](mailto:contact@gitbook.com)。
-
-* [GitBook Toolchain](https://github.com/GitbookIO/gitbook/issues?state=open)
-* [Platform and Marketplaces](https://github.com/GitbookIO/gitbook.io/issues?state=open)
