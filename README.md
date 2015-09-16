@@ -1,6 +1,6 @@
 ## GitBook 2.4
 
-2015/09/15
+`2015/09/15 更新`
 
 GitBook 是一個終端機指令工具，也是 Node.js 的代碼庫，使用 GitHub/Git 與 Markdown（或 AsciiDoc）就能製作漂亮的書籍。看看這個例子：[《Learn JavaScript》]。
 

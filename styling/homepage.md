@@ -1,6 +1,6 @@
 # 書籍首頁的佈景主題
 
-佈景主題（Themes）是指你在 GitBook 上的書籍單頁，並不是指書籍內文的排版樣式。你可以調整書籍單頁的呈現樣貌。
+佈景主題（Themes）是指你在 gitbook.com 上的書籍首頁，並不是指書籍內文的排版樣式。你可以選擇任一種預設主題，或是自訂 HTML 模板。
 
 ### 預設主題
 
@@ -8,7 +8,7 @@ GitBook 的預設主題以開源方式提供，你可以從 [GitHub](https://git
 
 ### 格式
 
-GitBook 佈景主題使用的是 [SWIG](http://paularmstrong.github.io/swig/docs/) 語法，總之又是一套設計模板用的語法（這是個巴別塔的世界啊！）。
+GitBook 使用 [Nunjucks](https://mozilla.github.io/nunjucks/) 與 [Jinga2](http://jinja.pocoo.org/) 的語法。
 
 #### Variables for book homepage
 

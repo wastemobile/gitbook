@@ -1,4 +1,4 @@
-# 出版單位 Organizations
+# 出版單位管理 Organizations
 
 你可以建立一個新的出版單位，也可以將既有的個人帳號轉換成出版單位。
 
