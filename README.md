@@ -1,5 +1,9 @@
 ## GitBook 中文解說 - 2.4
 
+`2015/09/16 更新`
+
+> 增加了一章 [〈不懂 GIT 也能用 GitBook〉](book/nogitisok.md)。只要掌握兩個重點，就能善用 GitBook 的長處，希望能對單純的作者、編輯有點幫助。
+
 `2015/09/15 更新`
 
 > 原搶先預覽中，與開發相關的說明（例如外掛），已移往單獨的 [GitBook 開發者手冊](https://www.gitbook.com/book/wastemobile/gitbook-api-guide/details)，目前官方手冊仍在持續增加內容，儘量會同步測試與更新。
