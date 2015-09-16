@@ -2,6 +2,8 @@
 
 `2015/09/15 更新`
 
+> 原搶先預覽中，與開發相關的說明（例如外掛），已移往單獨的 [GitBook 開發者手冊](https://www.gitbook.com/book/wastemobile/gitbook-api-guide/details)，目前官方手冊仍在持續增加內容，儘量會同步測試與更新。
+
 GitBook 是一個終端機指令工具，也是 Node.js 的代碼庫，使用 GitHub/Git 與 Markdown（或 AsciiDoc）就能製作漂亮的書籍。看看這個例子：[《Learn JavaScript》]。
 
 [GitBook](https://www.gitbook.com/) 同時也是一間書籍發佈平台與電子書店。一度停止開發的桌面版編輯器最近也回籠了，同時支援 Mac、Windows 與 Linux 三種平台，[下載試看看吧！](https://www.gitbook.com/editor)
