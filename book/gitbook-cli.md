@@ -55,7 +55,13 @@ $ npm install -g gitbook-cli
 gitbook epub [book] [output]
 ```
 
-例如 `gitbook mobi ~/books/mynovel ~/Desktop/novel.mobi`。製作電子書指定 output 時需包含完整的路徑與檔案名稱，製作靜態網站版本就只需要路徑目錄。
+例如 `gitbook mobi ~/books/mynovel ~/Desktop/novel.mobi`。製作電子書指定 output 時需包含完整的路徑與檔案名稱。
+
+想要將靜態網站建置到特定目錄，可以這樣輸入：
+
+```
+gitbook build --output=/site/mybook
+```
 
 輸入 `gitbook help` 可以看到說明訊息與指示。
 
