@@ -2,6 +2,7 @@
 
 * [簡介](README.md)
   * [不懂 GIT 也能用 GitBook](book/nogitisok.md)
+  * [GitBook 終端機指令](book/gitbook-cli.md)
   * [補充說明](book/addendum.md)
 * [書籍格式](format/README.md)
   * [輸出格式](format/output.md)
